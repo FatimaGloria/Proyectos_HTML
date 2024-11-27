@@ -14,6 +14,45 @@
     <title> Proyecto 20 con HTML </title>
 </head>
 <body>
+
+    <h1> Registro de personal </h1>
+
+    <!-- La tabla deberá contener un resumen o descripción.-->
+
+    <!-- Se utiliza esta etiqueta para agregar una tabla a la página, atributo sumary permite agregar una descripción del elemento. -->
+    <tabla sumary= "Usuarios registrados" border="1px">
+       
+      <!--Tr o table row, indica que se agregara una fila con información --> 
+        <tr>
+            <!-- como su nombre lo indica permiten agregar un table header o encabezado de la tabla -->
+            <th> Nombre </th>
+            <th> Apellido </th>
+            <th> Edad </th>
+        </tr>
+
+        <tr>
+            <!-- Significa table data y con esta etiqueta indicamos que lo se colocara son los datos de la tabla (siguiendo el orden de los encabezados)-->
+            <td> Fernanda </td>
+            <td> López </td>
+            <td> 29 </td>
+        </tr>
+
+        <tr>
+            <td> Alex </td>
+            <td> García </td>
+            <td> 26 </td>
+        </tr>
+
+        <tr>
+            <td> Juan </td>
+            
+            <!-- colspan 2 permite que la fila se expanda u ocupe dos lugares, rowspan hace lo mismo pero con las celdas de columnas (hacia abajo)-->
+            <td colspan="2"> Perez </td>
+        </tr>
+
+
+    </tabla>
+
     
 </body>
 </html>
