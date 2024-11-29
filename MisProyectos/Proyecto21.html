@@ -11,6 +11,26 @@
     <title> Proyecto 21 con HTML </title>
 </head>
 <body>
+
+    <h1> Creando formularios con html </h1>
     
+    <!-- Se utiliza esta etiqueta para crear formuarios donde la información será enviada a algún sitio (bases de datos) -->
+    <form action= "" method= "post">
+        
+        <!-- Label permite agregar el nombre o campo del input para que el usuario lo identifique, 
+         El atributo for="" es para conectar con el input através de su id. -->
+        <label for= "nombre">
+            Nombre:
+        </label>
+        
+        <!-- Permite la entrada de texto y crea el espacio donde el usuario ingresará la información solicitada.
+         Placeholder es un atributo que muestra un texto o leyenda temporal en el input, a manera de guía para el usuario -->
+        <input type= "text" name="nombre" id= "nombre" placeholder= "Introduce tu nombre aquí"> 
+        
+        <!-- Este input permite crear un boton que envie la información ingresada a algun sitio,
+         el atributo value permite ponerle un nombre al botón que lo identifique ante el usuario. -->
+       <input type= "submit" value= "Enviar"/>
+    </form>
+
 </body>
 </html>
