@@ -23,21 +23,23 @@
     <!-- Recordando que para agregar un formulario se utiliza esta etiqueta-->
     <form>
 
-        <!-- -->
+        <!-- Parecido a un contenerdor, permite organizar en grupos los campos de un formulario -->
         <fieldset> 
-            <!-- -->
+            <!-- Se utiliza esta etiqueta para agregarle un titulo a un fieldset (titulo de alguna agrupación) -->
             <legend> Descripción </legend>
             <label for= "descripcion"> Introduce una descripcion </label>
             <br/>
-            <!-- -->
+            <!-- textarea permite agregar un cuadro donde el usuario pueda ingresar información.-->
             <textarea name= "descripcion" id= "descripcion"> </textarea>
         </fieldset>
         
         <fieldset> 
             <legend> Email </legend>
+            <!-- Etiqueta que permite agregar un nombre/titulo al input)-->
             <label for= "email"> Introduce un email </label>
             <br/>
-            <!-- -->
+            <!-- Todas las etiquetas input permiten que se solicite y recolecte diferentes tipos de datos, 
+             en este caso brinda el "formato" para recolectar un correo electronico. -->
             <input type= "email" name= "email" id= "email"/>
         </fieldset>
 
@@ -45,7 +47,7 @@
             <legend> Radio </legend>
             <label for= "edad"> Edad: </label>
 
-            <!-- -->
+            <!-- Esta etiqueta permite agregar un campo donde el usuario podrá seleccionar unicamente una opción entre varias-->
             <input type= "radio" name= "edad" id= "mayor"/>
             <label for= "mayor" > Mayor de edad </label>
         
@@ -55,6 +57,58 @@
             <input type= "radio" name= "edad" id= "anciano"/>
             <label for= "anciano" > Menor de 65 años </label>
         </fieldset>
+
+        <fieldset>
+            <legend> Select </legend>
+            <label for="comidas"> Entradas </label>
+
+            <select>
+                <option> Sopa de fideos </option>
+                <option> Caldo de res </option>
+                <option> Crema de elote </option>
+                <option> Sopa de tortilla </option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend> Checkbox </legend>
+            
+            <label for= "sopas"> Sopas y Caldos: </label>
+             <!-- Esta etiqueta permite agregar un campo donde el usuario podrá seleccionar una opción dentro de un listado -->
+            <input type="checkbox" name= "sopas" id= "sopas"/>
+        </fieldset>
+
+        <fieldset>
+            <legend> Archivo </legend>
+            
+            <!-- Esta etiqueta permite el formato para que el usuario pueda subir un archivo -->
+            <label for= "archivo"> Sube tu archivo: </label>
+            <input type= "file" name= "archivo" id= "archivo"/>
+        </fieldset>
+
+        <fieldset>
+            <legend> Fecha </legend>
+            
+            <label for= "fecha"> Fecha: </label>
+            <input type="date" name= "fecha" id= "fecha"/>
+        </fieldset>
+
+        <fieldset>
+            <legend> Numero </legend>
+            
+            <label for= "numero"> Número: </label>
+            <input type="number" name= "numero" id= "numero"/>
+        </fieldset>
+
+        <fieldset>
+            <legend> Color </legend>
+            
+            <label for= "color"> Color: </label>
+            <input type="color" name= "color" id= "color">
+        </fieldset>
+
+        <br/>
+        <input type="submit" value= "Enviar formulario"/>
 
     </form>
     
