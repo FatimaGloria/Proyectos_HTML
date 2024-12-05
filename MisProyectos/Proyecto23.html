@@ -8,11 +8,57 @@ url, barra progreso, lista de datos, submit y reset.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Proyecto 23 con HTML 
-        
-    </title>
+    <title> Proyecto 23 con HTML </title>
 </head>
 <body>
+
+    <h1> Creando formularios con HTML - parte 2 </h1>
+
+    <form>
+        <div>
+            <label for= "busqueda"> Buscador: </label>
+            <input type="search" id="busqueda">
+        </div>
+
+        <div>
+            <label for= "telefono"> Teléfono: </label>
+            <input type="tel" id="telefono">
+        </div>
+    
+        <div>
+            <label for= "hora"> Hora: </label>
+            <input type="time" id="hora">
+        </div>
+        
+        <div>
+            <label for= "web"> Sitio web: </label>
+            <input type="url" id="web">
+        </div>
+
+        <div>
+            <label for= "progreso"> Barra progreso: </label>
+            <progress max="100" value="27"></progress>
+        </div>
+        
+        <!-- Data List, muestra una lista desplegable donde se pueda seleccionar un valor.-->
+        <div>
+            <label for= "coches"> Lista de coches </label>
+            <input list= "coches" name= "coche">
+
+            <datalist id= "coches">
+                <!-- opciones del listado -->
+                <option value= "audi"> </option>
+                <option value= "mercedes"> </option>
+                <option value= "kia"> </option>
+                <option value= "toyota"> </option>
+            </datalist>
+        </div>
+
+        <br>
+        <input type="submit" value= "Enviar">
+        <input type="reset" value= "Limpiar">
+
+    </form>
     
 </body>
 </html>
