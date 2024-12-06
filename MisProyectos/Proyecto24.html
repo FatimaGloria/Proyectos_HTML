@@ -14,5 +14,27 @@
 </head>
 <body>
     
+    <h1> Creando formularios con HTML - parte 3 </h1>
+
+    <form>
+
+        <div>
+            <label for= "texto"> Introduce tu nombre: </label>
+            <input type= "text" name= "texto" id= "texto" required minlength="3" maxlength="10" pattern="[A-Za-z]+">
+
+        </div>
+
+        <input type= "submit" value= "Enviar">
+
+    </form>
+
 </body>
 </html>
+
+<!--
+Atributos agregados al elemento input type= "text" que permiten cumplir los requerimientos solicitados.
+    required (que el campo se llene obligatoriamente )
+    minlength="3" (caracteres minimos a introducir)
+    maxlength="10" (caracteres maximos a introducir)
+    pattern="[A-Za-z]+ (que solo se reconozcan estos tipos de caracteres, no simbolos o numeros.)
+-->
